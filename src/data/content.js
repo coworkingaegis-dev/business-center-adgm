@@ -16,9 +16,9 @@ import execImg from '../assets/business-center-adgm-executive-office.webp'
 
 export const SITE_URL = 'https://businesscenteradgm.online'
 export const MAIN_SITE = 'https://www.aegiscoworking.ae'
-export const PAGE_TITLE = 'Business Center ADGM | Offices & Desks from AED 1,000 | Aegis'
+export const PAGE_TITLE = 'Business Center ADGM for Company Setup & Licensing'
 export const PAGE_DESCRIPTION =
-  'Business center in ADGM at Addax Tower: serviced private office from AED 4,500, dedicated desk AED 1,150, virtual office AED 292. ADGM office lease included.'
+  'Business center ADGM for company setup: choose a workspace, complete KYC, get your lease registered on AccessRP and use the address for your ADGM licence.'
 export const DATE_PUBLISHED = '2026-10-07'
 export const DATE_MODIFIED = '2026-10-07'
 
@@ -41,6 +41,9 @@ export const BUSINESS = {
     'https://www.facebook.com/aegis.coworking',
   ],
 }
+
+// Card links open WhatsApp instead of other websites
+export const WA_INFO = `${BUSINESS.whatsapp}?text=${encodeURIComponent('Hi Aegis, I would like more details about your workspace.')}`
 
 export const images = { privateImg, receptionImg, boardroomImg, deskImg, coworkImg, meetingImg, smallImg, servicedImg, execImg }
 
@@ -74,14 +77,14 @@ export const keywords = [
 
 // Orbit of services (all from aegiscoworking.ae)
 export const services = [
-  { id: 'private', icon: 'key', name: 'Private office', price: 'From AED 4,500 / month', text: 'A serviced office in ADGM for 1–20+ people: furnished, lockable, 24/7 access and a registered ADGM business address.', link: `${MAIN_SITE}/private-office` },
-  { id: 'desk', icon: 'chair', name: 'Dedicated desk', price: 'AED 1,150 / month', text: 'Your own desk with an ADGM registered office address — the lowest-cost office for ADGM licence applications.', link: 'https://dedicateddeskadgm.online/' },
-  { id: 'flexi', icon: 'people', name: 'Flexi desk', price: 'AED 1,000 / month', text: 'A flexi desk in ADGM: any open desk in the coworking space, with WiFi, coffee and the lounge.', link: `${MAIN_SITE}/office-space` },
-  { id: 'virtual', icon: 'mail', name: 'Virtual office', price: 'From AED 292 / month', text: 'A business address ADGM companies can register, with mail handling and directory listing.', link: 'https://servicedofficeadgm.online/' },
-  { id: 'meeting', icon: 'video', name: 'Meeting room', price: 'Hourly booking', text: 'A meeting room ADGM clients can visit — book the meeting room or boardroom by the hour.', link: `${MAIN_SITE}/meeting-room` },
-  { id: 'day', icon: 'sun', name: 'Day pass', price: 'AED 100 / day', text: 'The cheapest way into the business center: a full workday at a desk for AED 100.', link: `${MAIN_SITE}/day-pass` },
-  { id: 'lease', icon: 'shield', name: 'ADGM office lease', price: 'Registered on AccessRP', text: 'ADGM office leasing done for you — leases of 12–36 months registered on AccessRP.', link: `${MAIN_SITE}/blog/accessrp-adgm-lease-registration` },
-  { id: 'address', icon: 'doc', name: 'Registered office', price: 'Included', text: 'Every private office and dedicated desk includes an ADGM registered office for your licence.', link: `${MAIN_SITE}/office-space` },
+  { id: 'private', icon: 'key', name: 'Private office', price: 'From AED 4,500 / month', text: 'A serviced office in ADGM for 1–20+ people: furnished, lockable, 24/7 access and a registered ADGM business address.', link: WA_INFO },
+  { id: 'desk', icon: 'chair', name: 'Dedicated desk', price: 'AED 1,150 / month', text: 'Your own desk with an ADGM registered office address — the lowest-cost office for ADGM licence applications.', link: WA_INFO },
+  { id: 'flexi', icon: 'people', name: 'Flexi desk', price: 'AED 1,000 / month', text: 'A flexi desk in ADGM: any open desk in the coworking space, with WiFi, coffee and the lounge.', link: WA_INFO },
+  { id: 'virtual', icon: 'mail', name: 'Virtual office', price: 'From AED 292 / month', text: 'A business address ADGM companies can register, with mail handling and directory listing.', link: WA_INFO },
+  { id: 'meeting', icon: 'video', name: 'Meeting room', price: 'Hourly booking', text: 'A meeting room ADGM clients can visit — book the meeting room or boardroom by the hour.', link: WA_INFO },
+  { id: 'day', icon: 'sun', name: 'Day pass', price: 'AED 100 / day', text: 'The cheapest way into the business center: a full workday at a desk for AED 100.', link: WA_INFO },
+  { id: 'lease', icon: 'shield', name: 'ADGM office lease', price: 'Registered on AccessRP', text: 'ADGM office leasing done for you — leases of 12–36 months registered on AccessRP.', link: WA_INFO },
+  { id: 'address', icon: 'doc', name: 'Registered office', price: 'Included', text: 'Every private office and dedicated desk includes an ADGM registered office for your licence.', link: WA_INFO },
 ]
 
 // Budget planner (monthly prices from aegiscoworking.ae)
@@ -102,14 +105,10 @@ export const setupSteps = [
   { title: 'Licence & move in', text: 'Use your ADGM registered office for the licence, collect your access card and start work.' },
 ]
 
+// Two genuine member reviews, word for word — a different pair on each site
 export const testimonials = [
   { quote: 'Aegis coworking provide super professional services especially with the pricing, and the customer service, i needed the license and a space for one of my team member and they did all within a week time, my team member loved the space. I will highly suggest if any on is looking to get a license and a space in ADGM go for Aegis coworking.', name: 'Ubaid Zia', role: 'Startup Founder' },
-  { quote: 'Very happy with the service from Aegis Coworking. We needed a professional business address in Abu Dhabi without committing to a large traditional office, and Aegis provided a practical solution. The team is responsive and professional.', name: 'Uzair Tahir', role: 'Tech Startup Founder' },
-  { quote: 'I was specifically looking for the cheapest coworking space in ADGM and wanted a privacy environment rather than just a desk. Aegis offered a good balance of price, location, and facilities.', name: 'Naveeda Haseeb', role: 'Startup Founder' },
-  { quote: 'We were comparing affordable coworking space in ADGM and found Aegis to be a very practical choice. The workspace feels professional while keeping costs affordable.', name: 'John Paints', role: 'Software Analyst' },
-  { quote: 'For businesses looking for a low cost office in ADGM, Aegis provides flexible office space and a professional seating. The team made the setup process very easy.', name: 'Haseeb Awan', role: 'Entrepreneur' },
   { quote: 'Aegis Coworking is a convenient workspace in Abu Dhabi for startups and growing companies. The flexible workspace options, meeting room and hot desk helped us avoid the commitment of a traditional office.', name: 'Kasim Malikkandy', role: 'Consultant' },
-  { quote: 'Nice suitable area for coworking for Adam incorporation.', name: 'Ali Kutty Faizy', role: 'Entrepreneur' },
 ]
 
 export const guides = [
@@ -128,17 +127,15 @@ export const faqs = [
   {
     q: 'What is a business center in ADGM?',
     a: 'A business center in ADGM is a serviced building or floor inside the Abu Dhabi Global Market jurisdiction that rents furnished offices, desks, meeting rooms and registered addresses on flexible terms, with reception, internet and cleaning included. Aegis Coworking runs its business centre on Level 38 of Addax Tower, Al Reem Island.',
-    link: { text: 'Which ADGM workspace fits you?', url: `${MAIN_SITE}/blog/which-adgm-workspace-fits-you` },
+    link: { text: 'Which ADGM workspace fits you?', url: 'https://www.aegiscoworking.ae/blog/which-adgm-workspace-fits-you' },
   },
   {
     q: 'How much does the business center in ADGM cost?',
     a: 'A serviced private office starts from AED 4,500 per month, a dedicated desk is AED 1,150, a flexi desk AED 1,000, a virtual office from AED 292 per month and a day pass AED 100. Meeting rooms are booked by the hour. ADGM government fees are separate.',
-    link: { text: 'ADGM coworking cost guide 2026', url: `${MAIN_SITE}/blog/adgm-coworking-space-cost-2026` },
   },
   {
     q: 'Is the business center on Al Reem Island inside ADGM?',
     a: 'Yes. Addax Tower on Al Reem Island is within the ADGM jurisdiction, so the business centre gives you a genuine ADGM business address.',
-    link: { text: 'Is Al Reem Island part of ADGM?', url: `${MAIN_SITE}/blog/is-al-reem-island-part-of-adgm` },
   },
   {
     q: 'Can I use the business center as my ADGM registered office?',
@@ -147,12 +144,10 @@ export const faqs = [
   {
     q: 'Do you provide the ADGM office lease?',
     a: 'Yes. We issue your ADGM office lease and register it on AccessRP. Leases run from 12 to 36 months.',
-    link: { text: 'How AccessRP lease registration works', url: `${MAIN_SITE}/blog/accessrp-adgm-lease-registration` },
   },
   {
     q: 'What is the cheapest desk space in ADGM?',
     a: 'A day pass at AED 100 is the cheapest option. For monthly use, a flexi desk is AED 1,000, and the dedicated desk at AED 1,150 is the lowest-cost option that includes a registered ADGM address.',
-    link: { text: 'Low-cost office options in ADGM', url: `${MAIN_SITE}/blog/low-cost-office-adgm-budget-friendly-workspace-solutions-in-abu-dhabi` },
   },
   {
     q: 'Are there deposits or setup fees?',
@@ -165,12 +160,11 @@ export const faqs = [
   {
     q: 'Can I book a meeting room without renting an office?',
     a: 'Yes. Meeting rooms and the boardroom can be booked by the hour for client meetings in ADGM.',
-    link: { text: 'Meeting room vs private office', url: `${MAIN_SITE}/blog/adgm-meeting-room-vs-private-office-client-meetings` },
   },
   {
     q: 'Do FSRA-regulated firms need a private office?',
     a: 'FSRA-regulated firms usually need physical premises such as a private office, while many non-regulated companies can use a dedicated desk, flexi desk or virtual office.',
-    link: { text: 'ADGM FSRA office requirements', url: `${MAIN_SITE}/blog/adgm-fsra-office-requirements` },
+    link: { text: 'ADGM FSRA office requirements', url: 'https://www.aegiscoworking.ae/blog/adgm-fsra-office-requirements' },
   },
   {
     q: 'Can I start small and upgrade later?',
@@ -179,5 +173,13 @@ export const faqs = [
   {
     q: 'How do I book a tour of the business center?',
     a: 'Message us on WhatsApp or call +971 50 392 6316. Tours run Monday to Friday, 9 AM–6 PM, and we can send a video walkthrough if you are abroad.',
+  },
+  {
+    q: 'At which stage of ADGM company setup should I book my workspace?',
+    a: 'Early. ADGM licence applications typically require an office or registered address, so having your lease ready helps your application move forward. ADGM’s Registration Authority or your corporate service provider can confirm the exact requirements for your activity.',
+  },
+  {
+    q: 'What happens after my ADGM licence is issued?',
+    a: 'Collect your access card and start working. Your workspace stays your registered address for licence renewals, and you can upgrade to a larger space as you grow.',
   },
 ]
