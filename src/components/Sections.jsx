@@ -21,7 +21,7 @@ export function Intro() {
           </p>
           <p>
             It is a business center Al Reem Island companies can register in and ADGM office space for rent without
-            the fit-out: commercial office space ADGM licences accept, run by <a href={`${MAIN_SITE}/`}>Aegis Coworking</a>.
+            the fit-out: commercial office space ADGM licences accept, run by Aegis Coworking.
           </p>
           <p>
             As an ADGM business center, we keep office rental ADGM simple: a serviced office ADGM teams can lock,
@@ -172,7 +172,7 @@ export function Budget() {
             <a className="btn btn-light" href={wa(`Hi Aegis, I'd like a ${p.name.toLowerCase()} for ${team} ${team === 1 ? 'person' : 'people'} at your business center in ADGM.`)} target="_blank" rel="noopener noreferrer">Get this on WhatsApp</a>
           </div>
         </Reveal>
-        <p className="fine center">Need the cheapest desk space in ADGM? A day pass is AED 100. See current offers on <a href={`${MAIN_SITE}/pricing`}>aegiscoworking.ae/pricing</a>.</p>
+        <p className="fine center">Need the cheapest desk space in ADGM? A day pass is AED 100. Ask us on WhatsApp for current offers.</p>
       </div>
     </section>
   )
@@ -213,7 +213,6 @@ export function Setup() {
           ))}
           <li className="ss-end">
             <a className="btn btn-wine" href={wa('Hi Aegis, I want to set up my ADGM company at your business center.')} target="_blank" rel="noopener noreferrer">Start my setup</a>
-            <a className="link-u" href={`${MAIN_SITE}/blog/accessrp-adgm-lease-registration`}>How AccessRP works</a>
           </li>
         </ol>
       </div>
