@@ -21,14 +21,14 @@ function Hero() {
           <p className="hero-badge hl" style={{ '--d': 0 }}><span>ADGM</span>Business centre · Level 38, Addax Tower</p>
           <h1 id="hero-title" className="hero-title">
             <span className="ln"><span className="hl-line" style={{ '--d': 1 }}>A business center</span></span>
-            <span className="ln"><span className="hl-line" style={{ '--d': 2 }}>in ADGM, made for</span></span>
-            <span className="ln"><span className="hl-line accent" style={{ '--d': 3 }}>ambitious companies</span></span>
+            <span className="ln"><span className="hl-line" style={{ '--d': 2 }}>in ADGM, built for</span></span>
+            <span className="ln"><span className="hl-line accent" style={{ '--d': 3 }}>company setup</span></span>
           </h1>
         </div>
         <div className="hero-right hl" style={{ '--d': 4 }}>
           <p>
-            Serviced private offices, dedicated desks, a coworking space and an ADGM registered office on
-            Al Reem Island — with your ADGM office lease registered on AccessRP. Desks from <strong>AED 1,000</strong>,
+            From first enquiry to licence: pick a workspace, complete KYC, and we register your ADGM office lease
+            on AccessRP so you can use the address in your licence application. Desks from <strong>AED 1,000</strong>,
             private offices from <strong>AED 4,500</strong> a month.
           </p>
           <div className="hero-ctas">
